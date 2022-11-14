@@ -97,10 +97,7 @@
         }
       }
     }
-<<<<<<< HEAD
   },
   "defaultProject": "client"
-=======
-  }
->>>>>>> b7717e4d86aefe391324728f3ab640a87d975fc1
+
 }

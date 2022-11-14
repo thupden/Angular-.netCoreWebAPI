@@ -8,13 +8,8 @@
  *      file.
  *
  * The current setup is for so-called "evergreen" browsers; the last versions of browsers that
-<<<<<<< HEAD
  * automatically update themselves. This includes Safari >= 10, Chrome >= 55 (including Opera),
  * Edge >= 13 on the desktop, and iOS 10 and Chrome on mobile.
-=======
- * automatically update themselves. This includes recent versions of Safari, Chrome (including
- * Opera), Edge on the desktop, and iOS and Chrome on mobile.
->>>>>>> b7717e4d86aefe391324728f3ab640a87d975fc1
  *
  * Learn more in https://angular.io/guide/browser-support
  */
@@ -24,7 +19,6 @@
  */
 
 /**
-<<<<<<< HEAD
  * IE11 requires the following for NgClass support on SVG elements
  */
 // import 'classlist.js';  // Run `npm install --save classlist.js`.
@@ -37,8 +31,6 @@
 // import 'web-animations-js';  // Run `npm install --save web-animations-js`.
 
 /**
-=======
->>>>>>> b7717e4d86aefe391324728f3ab640a87d975fc1
  * By default, zone.js will patch all possible macroTask and DomEvents
  * user can disable parts of macroTask/DomEvents patch by setting following flags
  * because those flags need to be set before `zone.js` being loaded, and webpack
@@ -65,9 +57,10 @@
 /***************************************************************************************************
  * Zone JS is required by default for Angular itself.
  */
-import 'zone.js';  // Included with Angular CLI.
+ import 'zone.js';  // Included with Angular CLI.
 
 
-/***************************************************************************************************
- * APPLICATION IMPORTS
- */
+ /***************************************************************************************************
+  * APPLICATION IMPORTS
+  */
+ 
