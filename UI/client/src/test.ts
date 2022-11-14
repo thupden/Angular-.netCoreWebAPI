@@ -9,8 +9,13 @@ import {
 
 declare const require: {
   context(path: string, deep?: boolean, filter?: RegExp): {
+<<<<<<< HEAD
     keys(): string[];
     <T>(id: string): T;
+=======
+    <T>(id: string): T;
+    keys(): string[];
+>>>>>>> b7717e4d86aefe391324728f3ab640a87d975fc1
   };
 };
 
@@ -18,10 +23,17 @@ declare const require: {
 getTestBed().initTestEnvironment(
   BrowserDynamicTestingModule,
   platformBrowserDynamicTesting(),
+<<<<<<< HEAD
   { teardown: { destroyAfterEach: true }},
+=======
+>>>>>>> b7717e4d86aefe391324728f3ab640a87d975fc1
 );
 
 // Then we find all the tests.
 const context = require.context('./', true, /\.spec\.ts$/);
 // And load the modules.
+<<<<<<< HEAD
 context.keys().map(context);
+=======
+context.keys().forEach(context);
+>>>>>>> b7717e4d86aefe391324728f3ab640a87d975fc1
