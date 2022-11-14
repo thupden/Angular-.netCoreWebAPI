@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\thupd\\OneDrive\\Desktop\\AspNetCRUDWithAngular\\Angular-.netCoreWebAPI\\API\\MyApp\\MyApp\\MyApp.csproj": {}
+    "C:\\Users\\kkpz919\\OneDrive - AZCollaboration\\Desktop\\.net\\Angular-.netCoreWebAPI\\API\\MyApp\\MyApp\\MyApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\thupd\\OneDrive\\Desktop\\AspNetCRUDWithAngular\\Angular-.netCoreWebAPI\\API\\MyApp\\MyApp\\MyApp.csproj": {
+    "C:\\Users\\kkpz919\\OneDrive - AZCollaboration\\Desktop\\.net\\Angular-.netCoreWebAPI\\API\\MyApp\\MyApp\\MyApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thupd\\OneDrive\\Desktop\\AspNetCRUDWithAngular\\Angular-.netCoreWebAPI\\API\\MyApp\\MyApp\\MyApp.csproj",
+        "projectUniqueName": "C:\\Users\\kkpz919\\OneDrive - AZCollaboration\\Desktop\\.net\\Angular-.netCoreWebAPI\\API\\MyApp\\MyApp\\MyApp.csproj",
         "projectName": "MyApp",
-        "projectPath": "C:\\Users\\thupd\\OneDrive\\Desktop\\AspNetCRUDWithAngular\\Angular-.netCoreWebAPI\\API\\MyApp\\MyApp\\MyApp.csproj",
-        "packagesPath": "C:\\Users\\thupd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thupd\\OneDrive\\Desktop\\AspNetCRUDWithAngular\\Angular-.netCoreWebAPI\\API\\MyApp\\MyApp\\obj\\",
+        "projectPath": "C:\\Users\\kkpz919\\OneDrive - AZCollaboration\\Desktop\\.net\\Angular-.netCoreWebAPI\\API\\MyApp\\MyApp\\MyApp.csproj",
+        "packagesPath": "C:\\Users\\kkpz919\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kkpz919\\OneDrive - AZCollaboration\\Desktop\\.net\\Angular-.netCoreWebAPI\\API\\MyApp\\MyApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\thupd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kkpz919\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,7 +65,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -77,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
