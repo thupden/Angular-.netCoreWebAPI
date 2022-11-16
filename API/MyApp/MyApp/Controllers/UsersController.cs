@@ -8,10 +8,7 @@ namespace MyApp.Controllers
     [ApiController]
     [Route("api/[controller]")]
     public class UsersController : Controller
-    {
-        //Dummy data
-       
-        
+    { 
         private readonly DataContext _context;
 
         public UsersController(DataContext context)
