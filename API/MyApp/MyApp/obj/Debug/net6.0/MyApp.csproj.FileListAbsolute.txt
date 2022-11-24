@@ -162,3 +162,4 @@ C:\Users\kkpz919\OneDrive - AZCollaboration\Desktop\.net\Angular-.netCoreWebAPI\
 C:\Users\kkpz919\OneDrive - AZCollaboration\Desktop\.net\Angular-.netCoreWebAPI\API\MyApp\MyApp\obj\Debug\net6.0\MyApp.pdb
 C:\Users\kkpz919\OneDrive - AZCollaboration\Desktop\.net\Angular-.netCoreWebAPI\API\MyApp\MyApp\obj\Debug\net6.0\MyApp.genruntimeconfig.cache
 C:\Users\kkpz919\OneDrive - AZCollaboration\Desktop\.net\Angular-.netCoreWebAPI\API\MyApp\MyApp\obj\Debug\net6.0\ref\MyApp.dll
+C:\Users\kkpz919\OneDrive - AZCollaboration\Desktop\.net\Angular-.netCoreWebAPI\API\MyApp\MyApp\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
