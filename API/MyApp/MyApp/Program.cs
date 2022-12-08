@@ -1,4 +1,6 @@
 
+using MyApp.Data;
+
 namespace API
 {
     public class Program
