@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using MyApp.DTOs;
 using MyApp.Entities;
 using MyApp.Interfaces;
+using System.Security.Claims;
 
 namespace MyApp.Controllers
 {
@@ -34,5 +35,22 @@ namespace MyApp.Controllers
         {
             return await _userRepository.GetMemberAsync(username);
         }
+
+        [HttpPut]
+        public async Task<ActionResult> UpdateUser(MemberUpdateDto memberUpdateDto)
+        {
+            var username = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            var user = await _userRepository.GetUserByUsernameAsync(username);
+
+            if (user == null) return NotFound();
+
+            _mapper.Map(memberUpdateDto, user);
+
+            if (await _userRepository.SaveAllAsync()) return NoContent();
+
+            return BadRequest("Failed to update user");
+        }
+
+
     }
 }
