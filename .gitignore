@@ -363,4 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 
 #file need to ignore
-\API\MyApp\MyApp\appsetting.json
+/API/MyApp/MyApp/appsetting.json
