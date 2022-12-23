@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+#file need to ignore
+\API\MyApp\MyApp\appsetting.json
