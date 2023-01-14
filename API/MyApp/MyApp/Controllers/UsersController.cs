@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using CloudinaryDotNet.Actions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MyApp.DTOs;
@@ -25,6 +26,7 @@ namespace MyApp.Controllers
             _photoService = photoService;
         }
 
+   
         [HttpGet]
         public async Task<ActionResult<IEnumerable<MemberDto>>> GetUsers([FromQuery]UserParams userParams)
         {
@@ -44,7 +46,7 @@ namespace MyApp.Controllers
             return Ok(users);
         }
 
- 
+       
         [HttpGet]
         [Route("{username}")]
         public async Task<ActionResult<MemberDto>> GetUser(string username)
