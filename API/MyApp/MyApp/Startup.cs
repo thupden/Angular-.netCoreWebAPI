@@ -4,6 +4,7 @@ using MyApp.Data;
 using MyApp.Entities;
 using MyApp.Extensions;
 using MyApp.Middleware;
+using MyApp.SignalR;
 
 namespace API
 {
@@ -40,16 +41,24 @@ namespace API
 
             app.UseRouting();
 
-            app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200"));
+            app.UseCors(x => x
+                .AllowAnyHeader()
+                .AllowAnyMethod()
+                .AllowCredentials()
+                .WithOrigins("https://localhost:4200"));
 
             app.UseAuthentication();
 
             app.UseAuthorization();
-
+           
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHub<PresenceHub>("hubs/presence");
+                endpoints.MapHub<MessageHub>("hubs/message");
             });
+
+          
 
             using var scope = app.ApplicationServices.CreateScope();
             var services = scope.ServiceProvider;
@@ -59,6 +68,7 @@ namespace API
                 var userManager = services.GetRequiredService<UserManager<AppUser>>();
                 var roleManager = services.GetRequiredService<RoleManager<AppRole>>();
                 await context.Database.MigrateAsync();
+                await context.Database.ExecuteSqlRawAsync("TRUNCATE TABLE [Connections]");
                 await Seed.SeedUsers(userManager, roleManager);
             }
             catch (Exception ex)

@@ -4,6 +4,7 @@ using MyApp.Data;
 using MyApp.Helpers;
 using MyApp.Interfaces;
 using MyApp.Services;
+using MyApp.SignalR;
 
 namespace MyApp.Extensions
 {
@@ -25,7 +26,8 @@ namespace MyApp.Extensions
             services.AddScoped<LogUserActivity>();
             services.AddScoped<ILikesRepository, LikesRepository>();
             services.AddScoped<IMessageRepository, MessageRepository>();
-
+            services.AddSignalR();
+            services.AddSingleton<PresenceTracker>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
