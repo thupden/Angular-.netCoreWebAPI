@@ -50,6 +50,7 @@ export class AccountService {
     localStorage.setItem('user',JSON.stringify(user));
     this.currentUserSource.next(user);
     this.presenceService.createHubConnection(user);
+    console.log(user);
   }
   logout()
   {

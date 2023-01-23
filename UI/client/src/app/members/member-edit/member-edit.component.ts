@@ -20,7 +20,7 @@ export class MemberEditComponent implements OnInit {
     }
   }
   member: Member | undefined;
-  user: User | null = null;
+  user: any;
 
   constructor(private accountService: AccountService, 
               private memberService: MembersService,
@@ -36,7 +36,7 @@ export class MemberEditComponent implements OnInit {
 
   loadMember(){
     if(!this.user) return;
-    this.memberService.getMember(this.user.username).subscribe({
+    this.memberService.getMember(this.user.userName).subscribe({
       next: member => this.member = member
       })
   }
